@@ -1,197 +1,683 @@
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/_app";
-exports.ids = ["pages/_app"];
+exports.id = 888;
+exports.ids = [888];
 exports.modules = {
 
-/***/ "./components/_App/GoTop.js":
-/*!**********************************!*\
-  !*** ./components/_App/GoTop.js ***!
-  \**********************************/
+/***/ 9235:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-feather */ \"react-feather\");\n/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_feather__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\nconst GoTop = ({ scrollStepInPx , delayInMs  })=>{\n    const [thePosition, setThePosition] = react__WEBPACK_IMPORTED_MODULE_1___default().useState(false);\n    const timeoutRef = react__WEBPACK_IMPORTED_MODULE_1___default().useRef(null);\n    react__WEBPACK_IMPORTED_MODULE_1___default().useEffect(()=>{\n        document.addEventListener(\"scroll\", ()=>{\n            if (window.scrollY > 170) {\n                setThePosition(true);\n            } else {\n                setThePosition(false);\n            }\n        });\n    }, []);\n    const onScrollStep = ()=>{\n        if (window.pageYOffset === 0) {\n            clearInterval(timeoutRef.current);\n        }\n        window.scroll(0, window.pageYOffset - scrollStepInPx);\n    };\n    const scrollToTop = ()=>{\n        timeoutRef.current = setInterval(onScrollStep, delayInMs);\n    };\n    const renderGoTopIcon = ()=>{\n        return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            className: `go-top ${thePosition ? \"active\" : \"\"}`,\n            onClick: scrollToTop,\n            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_feather__WEBPACK_IMPORTED_MODULE_2__.ArrowUp, {}, void 0, false, {\n                fileName: \"/Users/edwin/Desktop/iprex/components/_App/GoTop.js\",\n                lineNumber: 35,\n                columnNumber: 9\n            }, undefined)\n        }, void 0, false, {\n            fileName: \"/Users/edwin/Desktop/iprex/components/_App/GoTop.js\",\n            lineNumber: 31,\n            columnNumber: 7\n        }, undefined);\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: renderGoTopIcon()\n    }, void 0, false);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (GoTop);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL19BcHAvR29Ub3AuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBMEI7QUFDWTtBQUV0QyxNQUFNRSxRQUFRLENBQUMsRUFBRUMsZUFBYyxFQUFFQyxVQUFTLEVBQUUsR0FBSztJQUMvQyxNQUFNLENBQUNDLGFBQWFDLGVBQWUsR0FBR04scURBQWMsQ0FBQyxLQUFLO0lBQzFELE1BQU1RLGFBQWFSLG1EQUFZLENBQUMsSUFBSTtJQUVwQ0Esc0RBQWUsQ0FBQyxJQUFNO1FBQ3BCVyxTQUFTQyxnQkFBZ0IsQ0FBQyxVQUFVLElBQU07WUFDeEMsSUFBSUMsT0FBT0MsT0FBTyxHQUFHLEtBQUs7Z0JBQ3hCUixlQUFlLElBQUk7WUFDckIsT0FBTztnQkFDTEEsZUFBZSxLQUFLO1lBQ3RCLENBQUM7UUFDSDtJQUNGLEdBQUcsRUFBRTtJQUVMLE1BQU1TLGVBQWUsSUFBTTtRQUN6QixJQUFJRixPQUFPRyxXQUFXLEtBQUssR0FBRztZQUM1QkMsY0FBY1QsV0FBV1UsT0FBTztRQUNsQyxDQUFDO1FBQ0RMLE9BQU9NLE1BQU0sQ0FBQyxHQUFHTixPQUFPRyxXQUFXLEdBQUdiO0lBQ3hDO0lBRUEsTUFBTWlCLGNBQWMsSUFBTTtRQUN4QlosV0FBV1UsT0FBTyxHQUFHRyxZQUFZTixjQUFjWDtJQUNqRDtJQUVBLE1BQU1rQixrQkFBa0IsSUFBTTtRQUM1QixxQkFDRSw4REFBQ0M7WUFDQ0MsV0FBVyxDQUFDLE9BQU8sRUFBRW5CLGNBQWMsV0FBVyxFQUFFLENBQUMsQ0FBQztZQUNsRG9CLFNBQVNMO3NCQUVULDRFQUFDbkIsa0RBQVk7Ozs7Ozs7Ozs7SUFHbkI7SUFFQSxxQkFBTztrQkFBR3FCOztBQUNaO0FBRUEsaUVBQWVwQixLQUFLQSxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vaXByZXgvLi9jb21wb25lbnRzL19BcHAvR29Ub3AuanM/N2UzZCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSBcInJlYWN0XCI7XG5pbXBvcnQgKiBhcyBJY29uIGZyb20gXCJyZWFjdC1mZWF0aGVyXCI7XG5cbmNvbnN0IEdvVG9wID0gKHsgc2Nyb2xsU3RlcEluUHgsIGRlbGF5SW5NcyB9KSA9PiB7XG4gIGNvbnN0IFt0aGVQb3NpdGlvbiwgc2V0VGhlUG9zaXRpb25dID0gUmVhY3QudXNlU3RhdGUoZmFsc2UpO1xuICBjb25zdCB0aW1lb3V0UmVmID0gUmVhY3QudXNlUmVmKG51bGwpO1xuXG4gIFJlYWN0LnVzZUVmZmVjdCgoKSA9PiB7XG4gICAgZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcihcInNjcm9sbFwiLCAoKSA9PiB7XG4gICAgICBpZiAod2luZG93LnNjcm9sbFkgPiAxNzApIHtcbiAgICAgICAgc2V0VGhlUG9zaXRpb24odHJ1ZSk7XG4gICAgICB9IGVsc2Uge1xuICAgICAgICBzZXRUaGVQb3NpdGlvbihmYWxzZSk7XG4gICAgICB9XG4gICAgfSk7XG4gIH0sIFtdKTtcblxuICBjb25zdCBvblNjcm9sbFN0ZXAgPSAoKSA9PiB7XG4gICAgaWYgKHdpbmRvdy5wYWdlWU9mZnNldCA9PT0gMCkge1xuICAgICAgY2xlYXJJbnRlcnZhbCh0aW1lb3V0UmVmLmN1cnJlbnQpO1xuICAgIH1cbiAgICB3aW5kb3cuc2Nyb2xsKDAsIHdpbmRvdy5wYWdlWU9mZnNldCAtIHNjcm9sbFN0ZXBJblB4KTtcbiAgfTtcblxuICBjb25zdCBzY3JvbGxUb1RvcCA9ICgpID0+IHtcbiAgICB0aW1lb3V0UmVmLmN1cnJlbnQgPSBzZXRJbnRlcnZhbChvblNjcm9sbFN0ZXAsIGRlbGF5SW5Ncyk7XG4gIH07XG5cbiAgY29uc3QgcmVuZGVyR29Ub3BJY29uID0gKCkgPT4ge1xuICAgIHJldHVybiAoXG4gICAgICA8ZGl2XG4gICAgICAgIGNsYXNzTmFtZT17YGdvLXRvcCAke3RoZVBvc2l0aW9uID8gXCJhY3RpdmVcIiA6IFwiXCJ9YH1cbiAgICAgICAgb25DbGljaz17c2Nyb2xsVG9Ub3B9XG4gICAgICA+XG4gICAgICAgIDxJY29uLkFycm93VXAgLz5cbiAgICAgIDwvZGl2PlxuICAgICk7XG4gIH07XG5cbiAgcmV0dXJuIDw+e3JlbmRlckdvVG9wSWNvbigpfTwvPjtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IEdvVG9wO1xuIl0sIm5hbWVzIjpbIlJlYWN0IiwiSWNvbiIsIkdvVG9wIiwic2Nyb2xsU3RlcEluUHgiLCJkZWxheUluTXMiLCJ0aGVQb3NpdGlvbiIsInNldFRoZVBvc2l0aW9uIiwidXNlU3RhdGUiLCJ0aW1lb3V0UmVmIiwidXNlUmVmIiwidXNlRWZmZWN0IiwiZG9jdW1lbnQiLCJhZGRFdmVudExpc3RlbmVyIiwid2luZG93Iiwic2Nyb2xsWSIsIm9uU2Nyb2xsU3RlcCIsInBhZ2VZT2Zmc2V0IiwiY2xlYXJJbnRlcnZhbCIsImN1cnJlbnQiLCJzY3JvbGwiLCJzY3JvbGxUb1RvcCIsInNldEludGVydmFsIiwicmVuZGVyR29Ub3BJY29uIiwiZGl2IiwiY2xhc3NOYW1lIiwib25DbGljayIsIkFycm93VXAiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./components/_App/GoTop.js\n");
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9101);
+/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_feather__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+const GoTop = ({ scrollStepInPx , delayInMs  })=>{
+    const [thePosition, setThePosition] = react__WEBPACK_IMPORTED_MODULE_1___default().useState(false);
+    const timeoutRef = react__WEBPACK_IMPORTED_MODULE_1___default().useRef(null);
+    react__WEBPACK_IMPORTED_MODULE_1___default().useEffect(()=>{
+        document.addEventListener("scroll", ()=>{
+            if (window.scrollY > 170) {
+                setThePosition(true);
+            } else {
+                setThePosition(false);
+            }
+        });
+    }, []);
+    const onScrollStep = ()=>{
+        if (window.pageYOffset === 0) {
+            clearInterval(timeoutRef.current);
+        }
+        window.scroll(0, window.pageYOffset - scrollStepInPx);
+    };
+    const scrollToTop = ()=>{
+        timeoutRef.current = setInterval(onScrollStep, delayInMs);
+    };
+    const renderGoTopIcon = ()=>{
+        return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            className: `go-top ${thePosition ? "active" : ""}`,
+            onClick: scrollToTop,
+            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_feather__WEBPACK_IMPORTED_MODULE_2__.ArrowUp, {})
+        });
+    };
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: renderGoTopIcon()
+    });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (GoTop);
+
 
 /***/ }),
 
-/***/ "./components/_App/Layout.js":
-/*!***********************************!*\
-  !*** ./components/_App/Layout.js ***!
-  \***********************************/
+/***/ 852:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ \"next/head\");\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _GoTop__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./GoTop */ \"./components/_App/GoTop.js\");\n/* harmony import */ var _Sidebar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Sidebar */ \"./components/_App/Sidebar.js\");\n/* harmony import */ var react_hot_toast__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-hot-toast */ \"react-hot-toast\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([react_hot_toast__WEBPACK_IMPORTED_MODULE_5__]);\nreact_hot_toast__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\n\n\n\n\nconst Layout = ({ children  })=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_head__WEBPACK_IMPORTED_MODULE_2___default()), {\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        charSet: \"utf-8\"\n                    }, void 0, false, {\n                        fileName: \"/Users/edwin/Desktop/iprex/components/_App/Layout.js\",\n                        lineNumber: 11,\n                        columnNumber: 9\n                    }, undefined),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        name: \"viewport\",\n                        content: \"width=device-width, initial-scale=1\"\n                    }, void 0, false, {\n                        fileName: \"/Users/edwin/Desktop/iprex/components/_App/Layout.js\",\n                        lineNumber: 12,\n                        columnNumber: 9\n                    }, undefined),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"title\", {\n                        children: \"StartP - React Next IT Startup & Digital Agency Template\"\n                    }, void 0, false, {\n                        fileName: \"/Users/edwin/Desktop/iprex/components/_App/Layout.js\",\n                        lineNumber: 13,\n                        columnNumber: 9\n                    }, undefined)\n                ]\n            }, void 0, true, {\n                fileName: \"/Users/edwin/Desktop/iprex/components/_App/Layout.js\",\n                lineNumber: 10,\n                columnNumber: 7\n            }, undefined),\n            children,\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_hot_toast__WEBPACK_IMPORTED_MODULE_5__.Toaster, {\n                position: \"top-right\"\n            }, void 0, false, {\n                fileName: \"/Users/edwin/Desktop/iprex/components/_App/Layout.js\",\n                lineNumber: 18,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_GoTop__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n                scrollStepInPx: \"100\",\n                delayInMs: \"10.50\"\n            }, void 0, false, {\n                fileName: \"/Users/edwin/Desktop/iprex/components/_App/Layout.js\",\n                lineNumber: 20,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_Sidebar__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {}, void 0, false, {\n                fileName: \"/Users/edwin/Desktop/iprex/components/_App/Layout.js\",\n                lineNumber: 22,\n                columnNumber: 7\n            }, undefined)\n        ]\n    }, void 0, true);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL19BcHAvTGF5b3V0LmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQTBCO0FBQ0c7QUFDRDtBQUNJO0FBQ1U7QUFFMUMsTUFBTUssU0FBUyxDQUFDLEVBQUVDLFNBQVEsRUFBRSxHQUFLO0lBQy9CLHFCQUNFOzswQkFDRSw4REFBQ0wsa0RBQUlBOztrQ0FDSCw4REFBQ007d0JBQUtDLFNBQVE7Ozs7OztrQ0FDZCw4REFBQ0Q7d0JBQUtFLE1BQUs7d0JBQVdDLFNBQVE7Ozs7OztrQ0FDOUIsOERBQUNDO2tDQUFNOzs7Ozs7Ozs7Ozs7WUFHUkw7MEJBRUQsOERBQUNGLG9EQUFPQTtnQkFBQ1EsVUFBUzs7Ozs7OzBCQUVsQiw4REFBQ1YsOENBQUtBO2dCQUFDVyxnQkFBZTtnQkFBTUMsV0FBVTs7Ozs7OzBCQUV0Qyw4REFBQ1gsZ0RBQU9BOzs7Ozs7O0FBR2Q7QUFFQSxpRUFBZUUsTUFBTUEsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2lwcmV4Ly4vY29tcG9uZW50cy9fQXBwL0xheW91dC5qcz8wZjhiIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCBIZWFkIGZyb20gXCJuZXh0L2hlYWRcIjtcbmltcG9ydCBHb1RvcCBmcm9tIFwiLi9Hb1RvcFwiO1xuaW1wb3J0IFNpZGViYXIgZnJvbSBcIi4vU2lkZWJhclwiO1xuaW1wb3J0IHsgVG9hc3RlciB9IGZyb20gXCJyZWFjdC1ob3QtdG9hc3RcIjtcblxuY29uc3QgTGF5b3V0ID0gKHsgY2hpbGRyZW4gfSkgPT4ge1xuICByZXR1cm4gKFxuICAgIDw+XG4gICAgICA8SGVhZD5cbiAgICAgICAgPG1ldGEgY2hhclNldD1cInV0Zi04XCIgLz5cbiAgICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xXCIgLz5cbiAgICAgICAgPHRpdGxlPlN0YXJ0UCAtIFJlYWN0IE5leHQgSVQgU3RhcnR1cCAmIERpZ2l0YWwgQWdlbmN5IFRlbXBsYXRlPC90aXRsZT5cbiAgICAgIDwvSGVhZD5cblxuICAgICAge2NoaWxkcmVufVxuXG4gICAgICA8VG9hc3RlciBwb3NpdGlvbj1cInRvcC1yaWdodFwiIC8+XG5cbiAgICAgIDxHb1RvcCBzY3JvbGxTdGVwSW5QeD1cIjEwMFwiIGRlbGF5SW5Ncz1cIjEwLjUwXCIgLz5cblxuICAgICAgPFNpZGViYXIgLz5cbiAgICA8Lz5cbiAgKTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IExheW91dDtcbiJdLCJuYW1lcyI6WyJSZWFjdCIsIkhlYWQiLCJHb1RvcCIsIlNpZGViYXIiLCJUb2FzdGVyIiwiTGF5b3V0IiwiY2hpbGRyZW4iLCJtZXRhIiwiY2hhclNldCIsIm5hbWUiLCJjb250ZW50IiwidGl0bGUiLCJwb3NpdGlvbiIsInNjcm9sbFN0ZXBJblB4IiwiZGVsYXlJbk1zIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./components/_App/Layout.js\n");
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(968);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _GoTop__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9235);
+/* harmony import */ var _Sidebar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9614);
+/* harmony import */ var react_hot_toast__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6201);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([react_hot_toast__WEBPACK_IMPORTED_MODULE_5__]);
+react_hot_toast__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+
+
+
+
+
+
+const Layout = ({ children  })=>{
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: [
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_head__WEBPACK_IMPORTED_MODULE_2___default()), {
+                children: [
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("meta", {
+                        charSet: "utf-8"
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("meta", {
+                        name: "viewport",
+                        content: "width=device-width, initial-scale=1"
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("title", {
+                        children: "StartP - React Next IT Startup & Digital Agency Template"
+                    })
+                ]
+            }),
+            children,
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_hot_toast__WEBPACK_IMPORTED_MODULE_5__.Toaster, {
+                position: "top-right"
+            }),
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_GoTop__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+                scrollStepInPx: "100",
+                delayInMs: "10.50"
+            }),
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Sidebar__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {})
+        ]
+    });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
+
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
 
 /***/ }),
 
-/***/ "./components/_App/Sidebar.js":
-/*!************************************!*\
-  !*** ./components/_App/Sidebar.js ***!
-  \************************************/
+/***/ 9614:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n\n\nconst Sidebar = ()=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            className: \"lang-didebar\",\n            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                href: \"/contact/\",\n                title: \"Best IT Solution\",\n                children: \"IPREX\"\n            }, void 0, false, {\n                fileName: \"/Users/edwin/Desktop/iprex/components/_App/Sidebar.js\",\n                lineNumber: 7,\n                columnNumber: 17\n            }, undefined)\n        }, void 0, false, {\n            fileName: \"/Users/edwin/Desktop/iprex/components/_App/Sidebar.js\",\n            lineNumber: 6,\n            columnNumber: 13\n        }, undefined)\n    }, void 0, false);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Sidebar);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL19BcHAvU2lkZWJhci5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBeUI7QUFFekIsTUFBTUMsVUFBVSxJQUFNO0lBQ2xCLHFCQUNJO2tCQUNJLDRFQUFDQztZQUFJQyxXQUFVO3NCQUNYLDRFQUFDQztnQkFBRUMsTUFBSztnQkFBWUMsT0FBTTswQkFBbUI7Ozs7Ozs7Ozs7OztBQU03RDtBQUVBLGlFQUFlTCxPQUFPQSxFQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vaXByZXgvLi9jb21wb25lbnRzL19BcHAvU2lkZWJhci5qcz8wNWZiIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcblxuY29uc3QgU2lkZWJhciA9ICgpID0+IHtcbiAgICByZXR1cm4gKFxuICAgICAgICA8PlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9J2xhbmctZGlkZWJhcic+XG4gICAgICAgICAgICAgICAgPGEgaHJlZj0nL2NvbnRhY3QvJyB0aXRsZT0nQmVzdCBJVCBTb2x1dGlvbic+XG4gICAgICAgICAgICAgICAgICAgIElQUkVYXG4gICAgICAgICAgICAgICAgPC9hPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvPlxuICAgIClcbn1cblxuZXhwb3J0IGRlZmF1bHQgU2lkZWJhclxuIl0sIm5hbWVzIjpbIlJlYWN0IiwiU2lkZWJhciIsImRpdiIsImNsYXNzTmFtZSIsImEiLCJocmVmIiwidGl0bGUiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./components/_App/Sidebar.js\n");
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+const Sidebar = ()=>{
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            className: "lang-didebar",
+            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+                href: "/contact/",
+                title: "Best IT Solution",
+                children: "IPREX"
+            })
+        })
+    });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Sidebar);
+
 
 /***/ }),
 
-/***/ "./pages/_app.js":
-/*!***********************!*\
-  !*** ./pages/_app.js ***!
-  \***********************/
+/***/ 8484:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/styles/bootstrap.min.css */ \"./styles/bootstrap.min.css\");\n/* harmony import */ var _styles_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var animate_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! animate.css */ \"./node_modules/animate.css/animate.css\");\n/* harmony import */ var animate_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(animate_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _styles_boxicons_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/styles/boxicons.min.css */ \"./styles/boxicons.min.css\");\n/* harmony import */ var _styles_boxicons_min_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_boxicons_min_css__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _styles_flaticon_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/styles/flaticon.css */ \"./styles/flaticon.css\");\n/* harmony import */ var _styles_flaticon_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_flaticon_css__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _styles_slick_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/styles/slick.css */ \"./styles/slick.css\");\n/* harmony import */ var _styles_slick_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_slick_css__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var react_accessible_accordion_dist_fancy_example_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-accessible-accordion/dist/fancy-example.css */ \"./node_modules/react-accessible-accordion/dist/fancy-example.css\");\n/* harmony import */ var react_accessible_accordion_dist_fancy_example_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_accessible_accordion_dist_fancy_example_css__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var swiper_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! swiper/css */ \"./node_modules/swiper/swiper.min.css\");\n/* harmony import */ var swiper_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(swiper_css__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var swiper_css_bundle__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! swiper/css/bundle */ \"./node_modules/swiper/swiper-bundle.min.css\");\n/* harmony import */ var swiper_css_bundle__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(swiper_css_bundle__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/styles/style.css */ \"./styles/style.css\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_styles_style_css__WEBPACK_IMPORTED_MODULE_9__);\n/* harmony import */ var _styles_responsive_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @/styles/responsive.css */ \"./styles/responsive.css\");\n/* harmony import */ var _styles_responsive_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_styles_responsive_css__WEBPACK_IMPORTED_MODULE_10__);\n/* harmony import */ var _styles_rtl_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @/styles/rtl.css */ \"./styles/rtl.css\");\n/* harmony import */ var _styles_rtl_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_styles_rtl_css__WEBPACK_IMPORTED_MODULE_11__);\n/* harmony import */ var _components_App_Layout__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @/components/_App/Layout */ \"./components/_App/Layout.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-redux */ \"react-redux\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_13__);\n/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../store */ \"./store.js\");\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! next/head */ \"next/head\");\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_15__);\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_components_App_Layout__WEBPACK_IMPORTED_MODULE_12__]);\n_components_App_Layout__WEBPACK_IMPORTED_MODULE_12__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\n\n\n\n\n\n\n\n// Global Style\n\n// Global Responsive Style\n\n// Global RTL Style\n\n// Multicolor if you want this color comment out\n// import '@/styles/colors/brink-pink-style.css'\n// import '@/styles/colors/pink-style.css'\n// import '@/styles/colors/purple-style.css'\n\n\n\n\nfunction App({ Component , pageProps  }) {\n    const store = (0,_store__WEBPACK_IMPORTED_MODULE_14__.useStore)(pageProps.initialReduxState);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_redux__WEBPACK_IMPORTED_MODULE_13__.Provider, {\n            store: store,\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_App_Layout__WEBPACK_IMPORTED_MODULE_12__[\"default\"], {}, void 0, false, {\n                    fileName: \"/Users/edwin/Desktop/iprex/pages/_app.js\",\n                    lineNumber: 33,\n                    columnNumber: 17\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_head__WEBPACK_IMPORTED_MODULE_15___default()), {\n                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"title\", {\n                        children: \"I-Prex Best IT Solution\"\n                    }, void 0, false, {\n                        fileName: \"/Users/edwin/Desktop/iprex/pages/_app.js\",\n                        lineNumber: 36,\n                        columnNumber: 21\n                    }, this)\n                }, void 0, false, {\n                    fileName: \"/Users/edwin/Desktop/iprex/pages/_app.js\",\n                    lineNumber: 35,\n                    columnNumber: 17\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(Component, {\n                    ...pageProps\n                }, void 0, false, {\n                    fileName: \"/Users/edwin/Desktop/iprex/pages/_app.js\",\n                    lineNumber: 39,\n                    columnNumber: 17\n                }, this)\n            ]\n        }, void 0, true, {\n            fileName: \"/Users/edwin/Desktop/iprex/pages/_app.js\",\n            lineNumber: 32,\n            columnNumber: 13\n        }, this)\n    }, void 0, false);\n}\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9fYXBwLmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQW1DO0FBQ2Y7QUFDYztBQUNKO0FBQ0g7QUFDK0I7QUFDdkM7QUFDTztBQUUxQixlQUFlO0FBQ1k7QUFDM0IsMEJBQTBCO0FBQ007QUFDaEMsbUJBQW1CO0FBQ007QUFFekIsZ0RBQWdEO0FBQ2hELGdEQUFnRDtBQUNoRCwwQ0FBMEM7QUFDMUMsNENBQTRDO0FBRUM7QUFDUDtBQUNIO0FBQ1A7QUFFYixTQUFTSSxJQUFJLEVBQUVDLFVBQVMsRUFBRUMsVUFBUyxFQUFFLEVBQUU7SUFDbEQsTUFBTUMsUUFBUUwsaURBQVFBLENBQUNJLFVBQVVFLGlCQUFpQjtJQUVsRCxxQkFDSTtrQkFDSSw0RUFBQ1Asa0RBQVFBO1lBQUNNLE9BQU9BOzs4QkFDYiw4REFBQ1AsK0RBQU1BOzs7Ozs4QkFFUCw4REFBQ0csbURBQUlBOzhCQUNELDRFQUFDTTtrQ0FBTTs7Ozs7Ozs7Ozs7OEJBR1gsOERBQUNKO29CQUFXLEdBQUdDLFNBQVM7Ozs7Ozs7Ozs7Ozs7QUFJeEMsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2lwcmV4Ly4vcGFnZXMvX2FwcC5qcz9lMGFkIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAnQC9zdHlsZXMvYm9vdHN0cmFwLm1pbi5jc3MnXG5pbXBvcnQgJ2FuaW1hdGUuY3NzJ1xuaW1wb3J0ICdAL3N0eWxlcy9ib3hpY29ucy5taW4uY3NzJ1xuaW1wb3J0ICdAL3N0eWxlcy9mbGF0aWNvbi5jc3MnXG5pbXBvcnQgJ0Avc3R5bGVzL3NsaWNrLmNzcydcbmltcG9ydCAncmVhY3QtYWNjZXNzaWJsZS1hY2NvcmRpb24vZGlzdC9mYW5jeS1leGFtcGxlLmNzcydcbmltcG9ydCAnc3dpcGVyL2NzcydcbmltcG9ydCAnc3dpcGVyL2Nzcy9idW5kbGUnXG5cbi8vIEdsb2JhbCBTdHlsZVxuaW1wb3J0ICdAL3N0eWxlcy9zdHlsZS5jc3MnXG4vLyBHbG9iYWwgUmVzcG9uc2l2ZSBTdHlsZVxuaW1wb3J0ICdAL3N0eWxlcy9yZXNwb25zaXZlLmNzcydcbi8vIEdsb2JhbCBSVEwgU3R5bGVcbmltcG9ydCAnQC9zdHlsZXMvcnRsLmNzcydcblxuLy8gTXVsdGljb2xvciBpZiB5b3Ugd2FudCB0aGlzIGNvbG9yIGNvbW1lbnQgb3V0XG4vLyBpbXBvcnQgJ0Avc3R5bGVzL2NvbG9ycy9icmluay1waW5rLXN0eWxlLmNzcydcbi8vIGltcG9ydCAnQC9zdHlsZXMvY29sb3JzL3Bpbmstc3R5bGUuY3NzJ1xuLy8gaW1wb3J0ICdAL3N0eWxlcy9jb2xvcnMvcHVycGxlLXN0eWxlLmNzcydcblxuaW1wb3J0IExheW91dCBmcm9tICdAL2NvbXBvbmVudHMvX0FwcC9MYXlvdXQnXG5pbXBvcnQgeyBQcm92aWRlciB9IGZyb20gJ3JlYWN0LXJlZHV4J1xuaW1wb3J0IHsgdXNlU3RvcmUgfSBmcm9tICcuLi9zdG9yZSdcbmltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCdcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQXBwKHsgQ29tcG9uZW50LCBwYWdlUHJvcHMgfSkge1xuICAgIGNvbnN0IHN0b3JlID0gdXNlU3RvcmUocGFnZVByb3BzLmluaXRpYWxSZWR1eFN0YXRlKVxuXG4gICAgcmV0dXJuIChcbiAgICAgICAgPD5cbiAgICAgICAgICAgIDxQcm92aWRlciBzdG9yZT17c3RvcmV9PlxuICAgICAgICAgICAgICAgIDxMYXlvdXQgLz5cblxuICAgICAgICAgICAgICAgIDxIZWFkPlxuICAgICAgICAgICAgICAgICAgICA8dGl0bGU+SS1QcmV4IEJlc3QgSVQgU29sdXRpb248L3RpdGxlPlxuICAgICAgICAgICAgICAgIDwvSGVhZD5cblxuICAgICAgICAgICAgICAgIDxDb21wb25lbnQgey4uLnBhZ2VQcm9wc30gLz5cbiAgICAgICAgICAgIDwvUHJvdmlkZXI+XG4gICAgICAgIDwvPlxuICAgIClcbn1cbiJdLCJuYW1lcyI6WyJMYXlvdXQiLCJQcm92aWRlciIsInVzZVN0b3JlIiwiSGVhZCIsIkFwcCIsIkNvbXBvbmVudCIsInBhZ2VQcm9wcyIsInN0b3JlIiwiaW5pdGlhbFJlZHV4U3RhdGUiLCJ0aXRsZSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./pages/_app.js\n");
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ App)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2620);
+/* harmony import */ var _styles_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var animate_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5544);
+/* harmony import */ var animate_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(animate_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_boxicons_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7851);
+/* harmony import */ var _styles_boxicons_min_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_boxicons_min_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _styles_flaticon_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8628);
+/* harmony import */ var _styles_flaticon_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_flaticon_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _styles_slick_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6655);
+/* harmony import */ var _styles_slick_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_slick_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_accessible_accordion_dist_fancy_example_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(7600);
+/* harmony import */ var react_accessible_accordion_dist_fancy_example_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_accessible_accordion_dist_fancy_example_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var swiper_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(8722);
+/* harmony import */ var swiper_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(swiper_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var swiper_css_bundle__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(1631);
+/* harmony import */ var swiper_css_bundle__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(swiper_css_bundle__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(8702);
+/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_styles_style_css__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _styles_responsive_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(6050);
+/* harmony import */ var _styles_responsive_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_styles_responsive_css__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _styles_rtl_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(733);
+/* harmony import */ var _styles_rtl_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_styles_rtl_css__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _components_App_Layout__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(852);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(6022);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(6096);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(968);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_15__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_components_App_Layout__WEBPACK_IMPORTED_MODULE_12__]);
+_components_App_Layout__WEBPACK_IMPORTED_MODULE_12__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+
+
+
+
+
+
+
+
+
+// Global Style
+
+// Global Responsive Style
+
+// Global RTL Style
+
+// Multicolor if you want this color comment out
+// import '@/styles/colors/brink-pink-style.css'
+// import '@/styles/colors/pink-style.css'
+// import '@/styles/colors/purple-style.css'
+
+
+
+
+function App({ Component , pageProps  }) {
+    const store = (0,_store__WEBPACK_IMPORTED_MODULE_14__/* .useStore */ .o)(pageProps.initialReduxState);
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_redux__WEBPACK_IMPORTED_MODULE_13__.Provider, {
+            store: store,
+            children: [
+                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_App_Layout__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Z, {}),
+                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)((next_head__WEBPACK_IMPORTED_MODULE_15___default()), {
+                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("title", {
+                        children: "I-Prex Best IT Solution"
+                    })
+                }),
+                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Component, {
+                    ...pageProps
+                })
+            ]
+        })
+    });
+}
+
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
 
 /***/ }),
 
-/***/ "./products.js":
-/*!*********************!*\
-  !*** ./products.js ***!
-  \*********************/
+/***/ 6096:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"productsData\": () => (/* binding */ productsData)\n/* harmony export */ });\nconst productsData = [\n    {\n        id: \"wood-pencil\",\n        name: \"Wood Pencil\",\n        price: 19.99,\n        desc: \"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.\",\n        availability: \"In Stock\",\n        image: \"/images/shop-image/shop-image1.jpg\",\n        images: [\n            {\n                id: 1,\n                img: \"/images/shop-image/shop-image1.jpg\"\n            },\n            {\n                id: 2,\n                img: \"/images/shop-image/shop-image1.jpg\"\n            },\n            {\n                id: 3,\n                img: \"/images/shop-image/shop-image1.jpg\"\n            },\n            {\n                id: 4,\n                img: \"/images/shop-image/shop-image1.jpg\"\n            }\n        ]\n    },\n    {\n        id: \"t-shirt\",\n        name: \"T-Shirt\",\n        price: 22.99,\n        desc: \"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.\",\n        availability: \"In Stock\",\n        image: \"/images/shop-image/shop-image2.jpg\",\n        images: [\n            {\n                id: 1,\n                img: \"/images/shop-image/shop-image1.jpg\"\n            },\n            {\n                id: 2,\n                img: \"/images/shop-image/shop-image2.jpg\"\n            },\n            {\n                id: 3,\n                img: \"/images/shop-image/shop-image1.jpg\"\n            },\n            {\n                id: 4,\n                img: \"/images/shop-image/shop-image2.jpg\"\n            }\n        ]\n    },\n    {\n        id: \"casual-shoe\",\n        name: \"Casual Shoe\",\n        price: 31.99,\n        desc: \"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.\",\n        availability: \"In Stock\",\n        image: \"/images/shop-image/shop-image3.jpg\",\n        images: [\n            {\n                id: 1,\n                img: \"/images/shop-image/shop-image3.jpg\"\n            },\n            {\n                id: 2,\n                img: \"/images/shop-image/shop-image2.jpg\"\n            },\n            {\n                id: 3,\n                img: \"/images/shop-image/shop-image1.jpg\"\n            },\n            {\n                id: 4,\n                img: \"/images/shop-image/shop-image2.jpg\"\n            }\n        ]\n    },\n    {\n        id: \"coffee-bag\",\n        name: \"Coffee Bag\",\n        price: 4.99,\n        desc: \"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.\",\n        availability: \"In Stock\",\n        image: \"/images/shop-image/shop-image4.jpg\",\n        images: [\n            {\n                id: 1,\n                img: \"/images/shop-image/shop-image4.jpg\"\n            },\n            {\n                id: 2,\n                img: \"/images/shop-image/shop-image2.jpg\"\n            },\n            {\n                id: 3,\n                img: \"/images/shop-image/shop-image1.jpg\"\n            },\n            {\n                id: 4,\n                img: \"/images/shop-image/shop-image4.jpg\"\n            }\n        ]\n    },\n    {\n        id: \"single-chair\",\n        name: \"Single Chair\",\n        price: 149.99,\n        desc: \"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.\",\n        availability: \"In Stock\",\n        image: \"/images/shop-image/shop-image5.jpg\",\n        images: [\n            {\n                id: 1,\n                img: \"/images/shop-image/shop-image5.jpg\"\n            },\n            {\n                id: 2,\n                img: \"/images/shop-image/shop-image2.jpg\"\n            },\n            {\n                id: 3,\n                img: \"/images/shop-image/shop-image1.jpg\"\n            },\n            {\n                id: 4,\n                img: \"/images/shop-image/shop-image4.jpg\"\n            }\n        ]\n    },\n    {\n        id: \"business-card\",\n        name: \"Business Card\",\n        price: 1.99,\n        desc: \"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.\",\n        availability: \"In Stock\",\n        image: \"/images/shop-image/shop-image6.jpg\",\n        images: [\n            {\n                id: 1,\n                img: \"/images/shop-image/shop-image6.jpg\"\n            },\n            {\n                id: 2,\n                img: \"/images/shop-image/shop-image2.jpg\"\n            },\n            {\n                id: 3,\n                img: \"/images/shop-image/shop-image1.jpg\"\n            },\n            {\n                id: 4,\n                img: \"/images/shop-image/shop-image4.jpg\"\n            }\n        ]\n    },\n    {\n        id: \"book-cover\",\n        name: \"Book Cover\",\n        price: 3.99,\n        desc: \"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.\",\n        availability: \"In Stock\",\n        image: \"/images/shop-image/shop-image7.jpg\",\n        images: [\n            {\n                id: 1,\n                img: \"/images/shop-image/shop-image7.jpg\"\n            },\n            {\n                id: 2,\n                img: \"/images/shop-image/shop-image2.jpg\"\n            },\n            {\n                id: 3,\n                img: \"/images/shop-image/shop-image1.jpg\"\n            },\n            {\n                id: 4,\n                img: \"/images/shop-image/shop-image4.jpg\"\n            }\n        ]\n    },\n    {\n        id: \"wall-watch\",\n        name: \"Wall Watch\",\n        price: 9.99,\n        desc: \"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.\",\n        availability: \"In Stock\",\n        image: \"/images/shop-image/shop-image8.jpg\",\n        images: [\n            {\n                id: 1,\n                img: \"/images/shop-image/shop-image8.jpg\"\n            },\n            {\n                id: 2,\n                img: \"/images/shop-image/shop-image2.jpg\"\n            },\n            {\n                id: 3,\n                img: \"/images/shop-image/shop-image1.jpg\"\n            },\n            {\n                id: 4,\n                img: \"/images/shop-image/shop-image4.jpg\"\n            }\n        ]\n    }\n];\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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O2dCQUNKTyxLQUFLO1lBQ1Q7WUFDQTtnQkFDSVAsSUFBSTtnQkFDSk8sS0FBSztZQUNUO1lBQ0E7Z0JBQ0lQLElBQUk7Z0JBQ0pPLEtBQUs7WUFDVDtTQUNIO0lBQ0w7Q0FDSCIsInNvdXJjZXMiOlsid2VicGFjazovL2lwcmV4Ly4vcHJvZHVjdHMuanM/N2RkMyJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY29uc3QgcHJvZHVjdHNEYXRhID0gW1xuICAgIHtcbiAgICAgICAgaWQ6ICd3b29kLXBlbmNpbCcsXG4gICAgICAgIG5hbWU6ICdXb29kIFBlbmNpbCcsXG4gICAgICAgIHByaWNlOiAxOS45OSxcbiAgICAgICAgZGVzYzogXCJUaGVyZSBhcmUgbWFueSB2YXJpYXRpb25zIG9mIHBhc3NhZ2VzIG9mIExvcmVtIElwc3VtIGF2YWlsYWJsZSwgYnV0IHRoZSBtYWpvcml0eSBoYXZlIHN1ZmZlcmVkIGFsdGVyYXRpb24gaW4gc29tZSBmb3JtLCBieSBpbmplY3RlZCBodW1vdXIsIG9yIHJhbmRvbWlzZWQgd29yZHMgd2hpY2ggZG9uJ3QgbG9vayBldmVuIHNsaWdodGx5IGJlbGlldmFibGUuXCIsXG4gICAgICAgIGF2YWlsYWJpbGl0eTogJ0luIFN0b2NrJyxcbiAgICAgICAgaW1hZ2U6ICcvaW1hZ2VzL3Nob3AtaW1hZ2Uvc2hvcC1pbWFnZTEuanBnJyxcbiAgICAgICAgaW1hZ2VzOiBbXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgaWQ6IDEsXG4gICAgICAgICAgICAgICAgaW1nOiAnL2ltYWdlcy9zaG9wLWltYWdlL3Nob3AtaW1hZ2UxLmpwZycsXG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIGlkOiAyLFxuICAgICAgICAgICAgICAgIGltZzogJy9pbWFnZXMvc2hvcC1pbWFnZS9zaG9wLWltYWdlMS5qcGcnLFxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBpZDogMyxcbiAgICAgICAgICAgICAgICBpbWc6ICcvaW1hZ2VzL3Nob3AtaW1hZ2Uvc2hvcC1pbWFnZTEuanBnJyxcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgaWQ6IDQsXG4gICAgICAgICAgICAgICAgaW1nOiAnL2ltYWdlcy9zaG9wLWltYWdlL3Nob3AtaW1hZ2UxLmpwZycsXG4gICAgICAgICAgICB9LFxuICAgICAgICBdLFxuICAgIH0sXG4gICAge1xuICAgICAgICBpZDogJ3Qtc2hpcnQnLFxuICAgICAgICBuYW1lOiAnVC1TaGlydCcsXG4gICAgICAgIHByaWNlOiAyMi45OSxcbiAgICAgICAgZGVzYzogXCJUaGVyZSBhcmUgbWFueSB2YXJpYXRpb25zIG9mIHBhc3NhZ2VzIG9mIExvcmVtIElwc3VtIGF2YWlsYWJsZSwgYnV0IHRoZSBtYWpvcml0eSBoYXZlIHN1ZmZlcmVkIGFsdGVyYXRpb24gaW4gc29tZSBmb3JtLCBieSBpbmplY3RlZCBodW1vdXIsIG9yIHJhbmRvbWlzZWQgd29yZHMgd2hpY2ggZG9uJ3QgbG9vayBldmVuIHNsaWdodGx5IGJlbGlldmFibGUuXCIsXG4gICAgICAgIGF2YWlsYWJpbGl0eTogJ0luIFN0b2NrJyxcbiAgICAgICAgaW1hZ2U6ICcvaW1hZ2VzL3Nob3AtaW1hZ2Uvc2hvcC1pbWFnZTIuanBnJyxcbiAgICAgICAgaW1hZ2VzOiBbXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgaWQ6IDEsXG4gICAgICAgICAgICAgICAgaW1nOiAnL2ltYWdlcy9zaG9wLWltYWdlL3Nob3AtaW1hZ2UxLmpwZycsXG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIGlkOiAyLFxuICAgICAgICAgICAgICAgIGltZzogJy9pbWFnZXMvc2hvcC1pbWFnZS9zaG9wLWltYWdlMi5qcGcnLFxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBpZDogMyxcbiAgICAgICAgICAgICAgICBpbWc6ICcvaW1hZ2VzL3Nob3AtaW1hZ2Uvc2hvcC1pbWFnZTEuanBnJyxcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgaWQ6IDQsXG4gICAgICAgICAgICAgICAgaW1nOiAnL2ltYWdlcy9zaG9wLWltYWdlL3Nob3AtaW1hZ2UyLmpwZycsXG4gICAgICAgICAgICB9LFxuICAgICAgICBdLFxuICAgIH0sXG4gICAge1xuICAgICAgICBpZDogJ2Nhc3VhbC1zaG9lJyxcbiAgICAgICAgbmFtZTogJ0Nhc3VhbCBTaG9lJyxcbiAgICAgICAgcHJpY2U6IDMxLjk5LFxuICAgICAgICBkZXNjOiBcIlRoZXJlIGFyZSBtYW55IHZhcmlhdGlvbnMgb2YgcGFzc2FnZXMgb2YgTG9yZW0gSXBzdW0gYXZhaWxhYmxlLCBidXQgdGhlIG1ham9yaXR5IGhhdmUgc3VmZmVyZWQgYWx0ZXJhdGlvbiBpbiBzb21lIGZvcm0sIGJ5IGluamVjdGVkIGh1bW91ciwgb3IgcmFuZG9taXNlZCB3b3JkcyB3aGljaCBkb24ndCBsb29rIGV2ZW4gc2xpZ2h0bHkgYmVsaWV2YWJsZS5cIixcbiAgICAgICAgYXZhaWxhYmlsaXR5OiAnSW4gU3RvY2snLFxuICAgICAgICBpbWFnZTogJy9pbWFnZXMvc2hvcC1pbWFnZS9zaG9wLWltYWdlMy5qcGcnLFxuICAgICAgICBpbWFnZXM6IFtcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBpZDogMSxcbiAgICAgICAgICAgICAgICBpbWc6ICcvaW1hZ2VzL3Nob3AtaW1hZ2Uvc2hvcC1pbWFnZTMuanBnJyxcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgaWQ6IDIsXG4gICAgICAgICAgICAgICAgaW1nOiAnL2ltYWdlcy9zaG9wLWltYWdlL3Nob3AtaW1hZ2UyLmpwZycsXG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIGlkOiAzLFxuICAgICAgICAgICAgICAgIGltZzogJy9pbWFnZXMvc2hvcC1pbWFnZS9zaG9wLWltYWdlMS5qcGcnLFxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBpZDogNCxcbiAgICAgICAgICAgICAgICBpbWc6ICcvaW1hZ2VzL3Nob3AtaW1hZ2Uvc2hvcC1pbWFnZTIuanBnJyxcbiAgICAgICAgICAgIH0sXG4gICAgICAgIF0sXG4gICAgfSxcbiAgICB7XG4gICAgICAgIGlkOiAnY29mZmVlLWJhZycsXG4gICAgICAgIG5hbWU6ICdDb2ZmZWUgQmFnJyxcbiAgICAgICAgcHJpY2U6IDQuOTksXG4gICAgICAgIGRlc2M6IFwiVGhlcmUgYXJlIG1hbnkgdmFyaWF0aW9ucyBvZiBwYXNzYWdlcyBvZiBMb3JlbSBJcHN1bSBhdmFpbGFibGUsIGJ1dCB0aGUgbWFqb3JpdHkgaGF2ZSBzdWZmZXJlZCBhbHRlcmF0aW9uIGluIHNvbWUgZm9ybSwgYnkgaW5qZWN0ZWQgaHVtb3VyLCBvciByYW5kb21pc2VkIHdvcmRzIHdoaWNoIGRvbid0IGxvb2sgZXZlbiBzbGlnaHRseSBiZWxpZXZhYmxlLlwiLFxuICAgICAgICBhdmFpbGFiaWxpdHk6ICdJbiBTdG9jaycsXG4gICAgICAgIGltYWdlOiAnL2ltYWdlcy9zaG9wLWltYWdlL3Nob3AtaW1hZ2U0LmpwZycsXG4gICAgICAgIGltYWdlczogW1xuICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIGlkOiAxLFxuICAgICAgICAgICAgICAgIGltZzogJy9pbWFnZXMvc2hvcC1pbWFnZS9zaG9wLWltYWdlNC5qcGcnLFxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBpZDogMixcbiAgICAgICAgICAgICAgICBpbWc6ICcvaW1hZ2VzL3Nob3AtaW1hZ2Uvc2hvcC1pbWFnZTIuanBnJyxcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgaWQ6IDMsXG4gICAgICAgICAgICAgICAgaW1nOiAnL2ltYWdlcy9zaG9wLWltYWdlL3Nob3AtaW1hZ2UxLmpwZycsXG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIGlkOiA0LFxuICAgICAgICAgICAgICAgIGltZzogJy9pbWFnZXMvc2hvcC1pbWFnZS9zaG9wLWltYWdlNC5qcGcnLFxuICAgICAgICAgICAgfSxcbiAgICAgICAgXSxcbiAgICB9LFxuICAgIHtcbiAgICAgICAgaWQ6ICdzaW5nbGUtY2hhaXInLFxuICAgICAgICBuYW1lOiAnU2luZ2xlIENoYWlyJyxcbiAgICAgICAgcHJpY2U6IDE0OS45OSxcbiAgICAgICAgZGVzYzogXCJUaGVyZSBhcmUgbWFueSB2YXJpYXRpb25zIG9mIHBhc3NhZ2VzIG9mIExvcmVtIElwc3VtIGF2YWlsYWJsZSwgYnV0IHRoZSBtYWpvcml0eSBoYXZlIHN1ZmZlcmVkIGFsdGVyYXRpb24gaW4gc29tZSBmb3JtLCBieSBpbmplY3RlZCBodW1vdXIsIG9yIHJhbmRvbWlzZWQgd29yZHMgd2hpY2ggZG9uJ3QgbG9vayBldmVuIHNsaWdodGx5IGJlbGlldmFibGUuXCIsXG4gICAgICAgIGF2YWlsYWJpbGl0eTogJ0luIFN0b2NrJyxcbiAgICAgICAgaW1hZ2U6ICcvaW1hZ2VzL3Nob3AtaW1hZ2Uvc2hvcC1pbWFnZTUuanBnJyxcbiAgICAgICAgaW1hZ2VzOiBbXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgaWQ6IDEsXG4gICAgICAgICAgICAgICAgaW1nOiAnL2ltYWdlcy9zaG9wLWltYWdlL3Nob3AtaW1hZ2U1LmpwZycsXG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIGlkOiAyLFxuICAgICAgICAgICAgICAgIGltZzogJy9pbWFnZXMvc2hvcC1pbWFnZS9zaG9wLWltYWdlMi5qcGcnLFxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBpZDogMyxcbiAgICAgICAgICAgICAgICBpbWc6ICcvaW1hZ2VzL3Nob3AtaW1hZ2Uvc2hvcC1pbWFnZTEuanBnJyxcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgaWQ6IDQsXG4gICAgICAgICAgICAgICAgaW1nOiAnL2ltYWdlcy9zaG9wLWltYWdlL3Nob3AtaW1hZ2U0LmpwZycsXG4gICAgICAgICAgICB9LFxuICAgICAgICBdLFxuICAgIH0sXG4gICAge1xuICAgICAgICBpZDogJ2J1c2luZXNzLWNhcmQnLFxuICAgICAgICBuYW1lOiAnQnVzaW5lc3MgQ2FyZCcsXG4gICAgICAgIHByaWNlOiAxLjk5LFxuICAgICAgICBkZXNjOiBcIlRoZXJlIGFyZSBtYW55IHZhcmlhdGlvbnMgb2YgcGFzc2FnZXMgb2YgTG9yZW0gSXBzdW0gYXZhaWxhYmxlLCBidXQgdGhlIG1ham9yaXR5IGhhdmUgc3VmZmVyZWQgYWx0ZXJhdGlvbiBpbiBzb21lIGZvcm0sIGJ5IGluamVjdGVkIGh1bW91ciwgb3IgcmFuZG9taXNlZCB3b3JkcyB3aGljaCBkb24ndCBsb29rIGV2ZW4gc2xpZ2h0bHkgYmVsaWV2YWJsZS5cIixcbiAgICAgICAgYXZhaWxhYmlsaXR5OiAnSW4gU3RvY2snLFxuICAgICAgICBpbWFnZTogJy9pbWFnZXMvc2hvcC1pbWFnZS9zaG9wLWltYWdlNi5qcGcnLFxuICAgICAgICBpbWFnZXM6IFtcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBpZDogMSxcbiAgICAgICAgICAgICAgICBpbWc6ICcvaW1hZ2VzL3Nob3AtaW1hZ2Uvc2hvcC1pbWFnZTYuanBnJyxcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgaWQ6IDIsXG4gICAgICAgICAgICAgICAgaW1nOiAnL2ltYWdlcy9zaG9wLWltYWdlL3Nob3AtaW1hZ2UyLmpwZycsXG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIGlkOiAzLFxuICAgICAgICAgICAgICAgIGltZzogJy9pbWFnZXMvc2hvcC1pbWFnZS9zaG9wLWltYWdlMS5qcGcnLFxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBpZDogNCxcbiAgICAgICAgICAgICAgICBpbWc6ICcvaW1hZ2VzL3Nob3AtaW1hZ2Uvc2hvcC1pbWFnZTQuanBnJyxcbiAgICAgICAgICAgIH0sXG4gICAgICAgIF0sXG4gICAgfSxcbiAgICB7XG4gICAgICAgIGlkOiAnYm9vay1jb3ZlcicsXG4gICAgICAgIG5hbWU6ICdCb29rIENvdmVyJyxcbiAgICAgICAgcHJpY2U6IDMuOTksXG4gICAgICAgIGRlc2M6IFwiVGhlcmUgYXJlIG1hbnkgdmFyaWF0aW9ucyBvZiBwYXNzYWdlcyBvZiBMb3JlbSBJcHN1bSBhdmFpbGFibGUsIGJ1dCB0aGUgbWFqb3JpdHkgaGF2ZSBzdWZmZXJlZCBhbHRlcmF0aW9uIGluIHNvbWUgZm9ybSwgYnkgaW5qZWN0ZWQgaHVtb3VyLCBvciByYW5kb21pc2VkIHdvcmRzIHdoaWNoIGRvbid0IGxvb2sgZXZlbiBzbGlnaHRseSBiZWxpZXZhYmxlLlwiLFxuICAgICAgICBhdmFpbGFiaWxpdHk6ICdJbiBTdG9jaycsXG4gICAgICAgIGltYWdlOiAnL2ltYWdlcy9zaG9wLWltYWdlL3Nob3AtaW1hZ2U3LmpwZycsXG4gICAgICAgIGltYWdlczogW1xuICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIGlkOiAxLFxuICAgICAgICAgICAgICAgIGltZzogJy9pbWFnZXMvc2hvcC1pbWFnZS9zaG9wLWltYWdlNy5qcGcnLFxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBpZDogMixcbiAgICAgICAgICAgICAgICBpbWc6ICcvaW1hZ2VzL3Nob3AtaW1hZ2Uvc2hvcC1pbWFnZTIuanBnJyxcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgaWQ6IDMsXG4gICAgICAgICAgICAgICAgaW1nOiAnL2ltYWdlcy9zaG9wLWltYWdlL3Nob3AtaW1hZ2UxLmpwZycsXG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIGlkOiA0LFxuICAgICAgICAgICAgICAgIGltZzogJy9pbWFnZXMvc2hvcC1pbWFnZS9zaG9wLWltYWdlNC5qcGcnLFxuICAgICAgICAgICAgfSxcbiAgICAgICAgXSxcbiAgICB9LFxuICAgIHtcbiAgICAgICAgaWQ6ICd3YWxsLXdhdGNoJyxcbiAgICAgICAgbmFtZTogJ1dhbGwgV2F0Y2gnLFxuICAgICAgICBwcmljZTogOS45OSxcbiAgICAgICAgZGVzYzogXCJUaGVyZSBhcmUgbWFueSB2YXJpYXRpb25zIG9mIHBhc3NhZ2VzIG9mIExvcmVtIElwc3VtIGF2YWlsYWJsZSwgYnV0IHRoZSBtYWpvcml0eSBoYXZlIHN1ZmZlcmVkIGFsdGVyYXRpb24gaW4gc29tZSBmb3JtLCBieSBpbmplY3RlZCBodW1vdXIsIG9yIHJhbmRvbWlzZWQgd29yZHMgd2hpY2ggZG9uJ3QgbG9vayBldmVuIHNsaWdodGx5IGJlbGlldmFibGUuXCIsXG4gICAgICAgIGF2YWlsYWJpbGl0eTogJ0luIFN0b2NrJyxcbiAgICAgICAgaW1hZ2U6ICcvaW1hZ2VzL3Nob3AtaW1hZ2Uvc2hvcC1pbWFnZTguanBnJyxcbiAgICAgICAgaW1hZ2VzOiBbXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgaWQ6IDEsXG4gICAgICAgICAgICAgICAgaW1nOiAnL2ltYWdlcy9zaG9wLWltYWdlL3Nob3AtaW1hZ2U4LmpwZycsXG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIGlkOiAyLFxuICAgICAgICAgICAgICAgIGltZzogJy9pbWFnZXMvc2hvcC1pbWFnZS9zaG9wLWltYWdlMi5qcGcnLFxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBpZDogMyxcbiAgICAgICAgICAgICAgICBpbWc6ICcvaW1hZ2VzL3Nob3AtaW1hZ2Uvc2hvcC1pbWFnZTEuanBnJyxcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgaWQ6IDQsXG4gICAgICAgICAgICAgICAgaW1nOiAnL2ltYWdlcy9zaG9wLWltYWdlL3Nob3AtaW1hZ2U0LmpwZycsXG4gICAgICAgICAgICB9LFxuICAgICAgICBdLFxuICAgIH0sXG5dXG4iXSwibmFtZXMiOlsicHJvZHVjdHNEYXRhIiwiaWQiLCJuYW1lIiwicHJpY2UiLCJkZXNjIiwiYXZhaWxhYmlsaXR5IiwiaW1hZ2UiLCJpbWFnZXMiLCJpbWciXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./products.js\n");
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "o": () => (/* binding */ useStore)
+});
+
+// UNUSED EXPORTS: initializeStore
+
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(6689);
+;// CONCATENATED MODULE: external "redux"
+const external_redux_namespaceObject = require("redux");
+;// CONCATENATED MODULE: external "redux-devtools-extension"
+const external_redux_devtools_extension_namespaceObject = require("redux-devtools-extension");
+;// CONCATENATED MODULE: ./products.js
+const productsData = [
+    {
+        id: "wood-pencil",
+        name: "Wood Pencil",
+        price: 19.99,
+        desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+        availability: "In Stock",
+        image: "/images/shop-image/shop-image1.jpg",
+        images: [
+            {
+                id: 1,
+                img: "/images/shop-image/shop-image1.jpg"
+            },
+            {
+                id: 2,
+                img: "/images/shop-image/shop-image1.jpg"
+            },
+            {
+                id: 3,
+                img: "/images/shop-image/shop-image1.jpg"
+            },
+            {
+                id: 4,
+                img: "/images/shop-image/shop-image1.jpg"
+            }
+        ]
+    },
+    {
+        id: "t-shirt",
+        name: "T-Shirt",
+        price: 22.99,
+        desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+        availability: "In Stock",
+        image: "/images/shop-image/shop-image2.jpg",
+        images: [
+            {
+                id: 1,
+                img: "/images/shop-image/shop-image1.jpg"
+            },
+            {
+                id: 2,
+                img: "/images/shop-image/shop-image2.jpg"
+            },
+            {
+                id: 3,
+                img: "/images/shop-image/shop-image1.jpg"
+            },
+            {
+                id: 4,
+                img: "/images/shop-image/shop-image2.jpg"
+            }
+        ]
+    },
+    {
+        id: "casual-shoe",
+        name: "Casual Shoe",
+        price: 31.99,
+        desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+        availability: "In Stock",
+        image: "/images/shop-image/shop-image3.jpg",
+        images: [
+            {
+                id: 1,
+                img: "/images/shop-image/shop-image3.jpg"
+            },
+            {
+                id: 2,
+                img: "/images/shop-image/shop-image2.jpg"
+            },
+            {
+                id: 3,
+                img: "/images/shop-image/shop-image1.jpg"
+            },
+            {
+                id: 4,
+                img: "/images/shop-image/shop-image2.jpg"
+            }
+        ]
+    },
+    {
+        id: "coffee-bag",
+        name: "Coffee Bag",
+        price: 4.99,
+        desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+        availability: "In Stock",
+        image: "/images/shop-image/shop-image4.jpg",
+        images: [
+            {
+                id: 1,
+                img: "/images/shop-image/shop-image4.jpg"
+            },
+            {
+                id: 2,
+                img: "/images/shop-image/shop-image2.jpg"
+            },
+            {
+                id: 3,
+                img: "/images/shop-image/shop-image1.jpg"
+            },
+            {
+                id: 4,
+                img: "/images/shop-image/shop-image4.jpg"
+            }
+        ]
+    },
+    {
+        id: "single-chair",
+        name: "Single Chair",
+        price: 149.99,
+        desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+        availability: "In Stock",
+        image: "/images/shop-image/shop-image5.jpg",
+        images: [
+            {
+                id: 1,
+                img: "/images/shop-image/shop-image5.jpg"
+            },
+            {
+                id: 2,
+                img: "/images/shop-image/shop-image2.jpg"
+            },
+            {
+                id: 3,
+                img: "/images/shop-image/shop-image1.jpg"
+            },
+            {
+                id: 4,
+                img: "/images/shop-image/shop-image4.jpg"
+            }
+        ]
+    },
+    {
+        id: "business-card",
+        name: "Business Card",
+        price: 1.99,
+        desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+        availability: "In Stock",
+        image: "/images/shop-image/shop-image6.jpg",
+        images: [
+            {
+                id: 1,
+                img: "/images/shop-image/shop-image6.jpg"
+            },
+            {
+                id: 2,
+                img: "/images/shop-image/shop-image2.jpg"
+            },
+            {
+                id: 3,
+                img: "/images/shop-image/shop-image1.jpg"
+            },
+            {
+                id: 4,
+                img: "/images/shop-image/shop-image4.jpg"
+            }
+        ]
+    },
+    {
+        id: "book-cover",
+        name: "Book Cover",
+        price: 3.99,
+        desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+        availability: "In Stock",
+        image: "/images/shop-image/shop-image7.jpg",
+        images: [
+            {
+                id: 1,
+                img: "/images/shop-image/shop-image7.jpg"
+            },
+            {
+                id: 2,
+                img: "/images/shop-image/shop-image2.jpg"
+            },
+            {
+                id: 3,
+                img: "/images/shop-image/shop-image1.jpg"
+            },
+            {
+                id: 4,
+                img: "/images/shop-image/shop-image4.jpg"
+            }
+        ]
+    },
+    {
+        id: "wall-watch",
+        name: "Wall Watch",
+        price: 9.99,
+        desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+        availability: "In Stock",
+        image: "/images/shop-image/shop-image8.jpg",
+        images: [
+            {
+                id: 1,
+                img: "/images/shop-image/shop-image8.jpg"
+            },
+            {
+                id: 2,
+                img: "/images/shop-image/shop-image2.jpg"
+            },
+            {
+                id: 3,
+                img: "/images/shop-image/shop-image1.jpg"
+            },
+            {
+                id: 4,
+                img: "/images/shop-image/shop-image4.jpg"
+            }
+        ]
+    }
+];
+
+;// CONCATENATED MODULE: ./store.js
+
+
+
+
+let store;
+const initialState = {
+    products: productsData,
+    cart: [],
+    total: 0
+};
+const reducer = (state = initialState, action)=>{
+    switch(action.type){
+        case "ADD_TO_CART":
+            let addedItem = state.products.find((item)=>item.id === action.id);
+            let existed_item = state.cart.find((item)=>action.id === item.id);
+            if (existed_item) {
+                addedItem.quantity += 1;
+                return {
+                    ...state,
+                    total: state.total + addedItem.price
+                };
+            } else {
+                addedItem.quantity = 1;
+                let newTotal = state.total + addedItem.price;
+                return {
+                    ...state,
+                    cart: [
+                        ...state.cart,
+                        addedItem
+                    ],
+                    total: newTotal
+                };
+            }
+        case "ADD_QUANTITY":
+            let existingItem = state.cart.find((item)=>item.id === action.id);
+            existingItem.quantity += 1;
+            let newTotal = state.total + existingItem.price;
+            return {
+                ...state,
+                total: newTotal
+            };
+        case "SUB_QUANTITY":
+            let exItem = state.products.find((item)=>item.id === action.id);
+            if (exItem.quantity === 1) {
+                let new_items = state.cart.filter((item)=>item.id !== action.id);
+                let newTotal = state.total - exItem.price;
+                return {
+                    ...state,
+                    cart: new_items,
+                    total: newTotal
+                };
+            } else {
+                exItem.quantity -= 1;
+                let newTotal = state.total - exItem.price;
+                return {
+                    ...state,
+                    total: newTotal
+                };
+            }
+        case "ADD_QUANTITY_WITH_NUMBER":
+            let addedItemD = state.products.find((item)=>item.id === action.id);
+            //check if the action id exists in the addedItems
+            let existed_itemd = state.cart.find((item)=>action.id === item.id);
+            if (existed_itemd) {
+                addeaddedItemDdItem.quantity += action.qty;
+                return {
+                    ...state,
+                    total: state.total + addedItemD.price * action.qty
+                };
+            } else {
+                addedItemD.quantity = action.qty;
+                //calculating the total
+                let newTotal = state.total + addedItemD.price * action.qty;
+                return {
+                    ...state,
+                    cart: [
+                        ...state.cart,
+                        addedItemD
+                    ],
+                    total: newTotal
+                };
+            }
+        case "REMOVE_ITEM":
+            let itemToRemove = state.cart.find((item)=>action.id === item.id);
+            let new_items = state.cart.filter((item)=>action.id !== item.id);
+            //calculating the total
+            let newTotalRemove = state.total - itemToRemove.price * itemToRemove.quantity;
+            return {
+                ...state,
+                cart: new_items,
+                total: newTotalRemove
+            };
+        case "RESET":
+            return {
+                ...state,
+                cart: []
+            };
+        default:
+            return state;
+    }
+};
+function initStore(preloadedState = initialState) {
+    return (0,external_redux_namespaceObject.createStore)(reducer, preloadedState, (0,external_redux_devtools_extension_namespaceObject.composeWithDevTools)((0,external_redux_namespaceObject.applyMiddleware)()));
+}
+const initializeStore = (preloadedState)=>{
+    let _store = store ?? initStore(preloadedState);
+    // After navigating to a page with an initial Redux state, merge that state
+    // with the current state in the store, and create a new store
+    if (preloadedState && store) {
+        _store = initStore({
+            ...store.getState(),
+            ...preloadedState
+        });
+        // Reset the current store
+        store = undefined;
+    }
+    // For SSG and SSR always create a new store
+    if (true) return _store;
+    // Create the store once in the client
+    if (!store) store = _store;
+    return _store;
+};
+function useStore(initialState) {
+    const store = (0,external_react_.useMemo)(()=>initializeStore(initialState), [
+        initialState
+    ]);
+    return store;
+}
+
 
 /***/ }),
 
-/***/ "./store.js":
-/*!******************!*\
-  !*** ./store.js ***!
-  \******************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"initializeStore\": () => (/* binding */ initializeStore),\n/* harmony export */   \"useStore\": () => (/* binding */ useStore)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux */ \"redux\");\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux-devtools-extension */ \"redux-devtools-extension\");\n/* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _products__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./products */ \"./products.js\");\n\n\n\n\nlet store;\nconst initialState = {\n    products: _products__WEBPACK_IMPORTED_MODULE_3__.productsData,\n    cart: [],\n    total: 0\n};\nconst reducer = (state = initialState, action)=>{\n    switch(action.type){\n        case \"ADD_TO_CART\":\n            let addedItem = state.products.find((item)=>item.id === action.id);\n            let existed_item = state.cart.find((item)=>action.id === item.id);\n            if (existed_item) {\n                addedItem.quantity += 1;\n                return {\n                    ...state,\n                    total: state.total + addedItem.price\n                };\n            } else {\n                addedItem.quantity = 1;\n                let newTotal = state.total + addedItem.price;\n                return {\n                    ...state,\n                    cart: [\n                        ...state.cart,\n                        addedItem\n                    ],\n                    total: newTotal\n                };\n            }\n        case \"ADD_QUANTITY\":\n            let existingItem = state.cart.find((item)=>item.id === action.id);\n            existingItem.quantity += 1;\n            let newTotal = state.total + existingItem.price;\n            return {\n                ...state,\n                total: newTotal\n            };\n        case \"SUB_QUANTITY\":\n            let exItem = state.products.find((item)=>item.id === action.id);\n            if (exItem.quantity === 1) {\n                let new_items = state.cart.filter((item)=>item.id !== action.id);\n                let newTotal = state.total - exItem.price;\n                return {\n                    ...state,\n                    cart: new_items,\n                    total: newTotal\n                };\n            } else {\n                exItem.quantity -= 1;\n                let newTotal = state.total - exItem.price;\n                return {\n                    ...state,\n                    total: newTotal\n                };\n            }\n        case \"ADD_QUANTITY_WITH_NUMBER\":\n            let addedItemD = state.products.find((item)=>item.id === action.id);\n            //check if the action id exists in the addedItems\n            let existed_itemd = state.cart.find((item)=>action.id === item.id);\n            if (existed_itemd) {\n                addeaddedItemDdItem.quantity += action.qty;\n                return {\n                    ...state,\n                    total: state.total + addedItemD.price * action.qty\n                };\n            } else {\n                addedItemD.quantity = action.qty;\n                //calculating the total\n                let newTotal = state.total + addedItemD.price * action.qty;\n                return {\n                    ...state,\n                    cart: [\n                        ...state.cart,\n                        addedItemD\n                    ],\n                    total: newTotal\n                };\n            }\n        case \"REMOVE_ITEM\":\n            let itemToRemove = state.cart.find((item)=>action.id === item.id);\n            let new_items = state.cart.filter((item)=>action.id !== item.id);\n            //calculating the total\n            let newTotalRemove = state.total - itemToRemove.price * itemToRemove.quantity;\n            return {\n                ...state,\n                cart: new_items,\n                total: newTotalRemove\n            };\n        case \"RESET\":\n            return {\n                ...state,\n                cart: []\n            };\n        default:\n            return state;\n    }\n};\nfunction initStore(preloadedState = initialState) {\n    return (0,redux__WEBPACK_IMPORTED_MODULE_1__.createStore)(reducer, preloadedState, (0,redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2__.composeWithDevTools)((0,redux__WEBPACK_IMPORTED_MODULE_1__.applyMiddleware)()));\n}\nconst initializeStore = (preloadedState)=>{\n    let _store = store ?? initStore(preloadedState);\n    // After navigating to a page with an initial Redux state, merge that state\n    // with the current state in the store, and create a new store\n    if (preloadedState && store) {\n        _store = initStore({\n            ...store.getState(),\n            ...preloadedState\n        });\n        // Reset the current store\n        store = undefined;\n    }\n    // For SSG and SSR always create a new store\n    if (true) return _store;\n    // Create the store once in the client\n    if (!store) store = _store;\n    return _store;\n};\nfunction useStore(initialState) {\n    const store = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(()=>initializeStore(initialState), [\n        initialState\n    ]);\n    return store;\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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Q0FBQztJQUVELDRDQUE0QztJQUM1QyxJQUFJLElBQWtCLEVBQWEsT0FBT0Y7SUFDMUMsc0NBQXNDO0lBQ3RDLElBQUksQ0FBQzlCLE9BQU9BLFFBQVE4QjtJQUVwQixPQUFPQTtBQUNULEVBQUM7QUFFTSxTQUFTRyxTQUFTaEMsWUFBWSxFQUFFO0lBQ3JDLE1BQU1ELFFBQVFMLDhDQUFPQSxDQUFDLElBQU1rQyxnQkFBZ0I1QixlQUFlO1FBQUNBO0tBQWE7SUFDekUsT0FBT0Q7QUFDVCxDQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vaXByZXgvLi9zdG9yZS5qcz80MGY1Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHVzZU1lbW8gfSBmcm9tICdyZWFjdCdcbmltcG9ydCB7IGNyZWF0ZVN0b3JlLCBhcHBseU1pZGRsZXdhcmUgfSBmcm9tICdyZWR1eCdcbmltcG9ydCB7IGNvbXBvc2VXaXRoRGV2VG9vbHMgfSBmcm9tICdyZWR1eC1kZXZ0b29scy1leHRlbnNpb24nXG5pbXBvcnQgeyBwcm9kdWN0c0RhdGEgfSBmcm9tICcuL3Byb2R1Y3RzJ1xuXG5sZXQgc3RvcmVcblxuY29uc3QgaW5pdGlhbFN0YXRlID0ge1xuICBwcm9kdWN0czogcHJvZHVjdHNEYXRhLFxuICBjYXJ0OiBbXSxcbiAgdG90YWw6IDAsXG59XG5cbmNvbnN0IHJlZHVjZXIgPSAoc3RhdGUgPSBpbml0aWFsU3RhdGUsIGFjdGlvbikgPT4ge1xuICBzd2l0Y2ggKGFjdGlvbi50eXBlKSB7XG4gICAgY2FzZSAnQUREX1RPX0NBUlQnOlxuICAgICAgbGV0IGFkZGVkSXRlbSA9IHN0YXRlLnByb2R1Y3RzLmZpbmQoaXRlbSA9PiBpdGVtLmlkID09PSBhY3Rpb24uaWQpXG4gICAgICBsZXQgZXhpc3RlZF9pdGVtID0gc3RhdGUuY2FydC5maW5kKGl0ZW0gPT4gYWN0aW9uLmlkID09PSBpdGVtLmlkKVxuXG4gICAgICBpZihleGlzdGVkX2l0ZW0pe1xuICAgICAgICBhZGRlZEl0ZW0ucXVhbnRpdHkgKz0gMVxuICAgICAgICByZXR1cm4ge1xuICAgICAgICAgIC4uLnN0YXRlLFxuICAgICAgICAgIHRvdGFsOiBzdGF0ZS50b3RhbCArIGFkZGVkSXRlbS5wcmljZVxuICAgICAgICB9XG4gICAgICB9IGVsc2Uge1xuICAgICAgICBhZGRlZEl0ZW0ucXVhbnRpdHkgPSAxXG4gICAgICAgIGxldCBuZXdUb3RhbCA9IHN0YXRlLnRvdGFsICsgYWRkZWRJdGVtLnByaWNlXG4gICAgICAgIHJldHVybiB7XG4gICAgICAgICAgLi4uc3RhdGUsXG4gICAgICAgICAgY2FydDogWy4uLnN0YXRlLmNhcnQsIGFkZGVkSXRlbV0sXG4gICAgICAgICAgdG90YWw6IG5ld1RvdGFsXG4gICAgICAgIH1cbiAgICAgIH1cblxuICAgIGNhc2UgJ0FERF9RVUFOVElUWSc6XG4gICAgICBsZXQgZXhpc3RpbmdJdGVtID0gc3RhdGUuY2FydC5maW5kKGl0ZW0gPT4gaXRlbS5pZCA9PT0gYWN0aW9uLmlkKVxuICAgICAgZXhpc3RpbmdJdGVtLnF1YW50aXR5ICs9IDFcbiAgICAgIGxldCBuZXdUb3RhbCA9IHN0YXRlLnRvdGFsICsgZXhpc3RpbmdJdGVtLnByaWNlXG4gICAgICByZXR1cm4ge1xuICAgICAgICAuLi5zdGF0ZSxcbiAgICAgICAgdG90YWw6IG5ld1RvdGFsXG4gICAgICB9XG5cbiAgICBjYXNlICdTVUJfUVVBTlRJVFknOlxuICAgICAgICBsZXQgZXhJdGVtID0gc3RhdGUucHJvZHVjdHMuZmluZChpdGVtPT4gaXRlbS5pZCA9PT0gYWN0aW9uLmlkKVxuICAgICAgICBpZihleEl0ZW0ucXVhbnRpdHkgPT09IDEpe1xuICAgICAgICAgIGxldCBuZXdfaXRlbXMgPSBzdGF0ZS5jYXJ0LmZpbHRlcihpdGVtPT5pdGVtLmlkICE9PSBhY3Rpb24uaWQpXG4gICAgICAgICAgbGV0IG5ld1RvdGFsID0gc3RhdGUudG90YWwgLSBleEl0ZW0ucHJpY2VcbiAgICAgICAgICByZXR1cm4ge1xuICAgICAgICAgICAgICAuLi5zdGF0ZSxcbiAgICAgICAgICAgICAgY2FydDogbmV3X2l0ZW1zLFxuICAgICAgICAgICAgICB0b3RhbDogbmV3VG90YWxcbiAgICAgICAgICB9XG4gICAgICB9IGVsc2Uge1xuICAgICAgICBleEl0ZW0ucXVhbnRpdHkgLT0gMVxuICAgICAgICBsZXQgbmV3VG90YWwgPSBzdGF0ZS50b3RhbCAtIGV4SXRlbS5wcmljZVxuICAgICAgICByZXR1cm4ge1xuICAgICAgICAgIC4uLnN0YXRlLFxuICAgICAgICAgIHRvdGFsOiBuZXdUb3RhbFxuICAgICAgICB9XG4gICAgICB9XG5cbiAgICBjYXNlICdBRERfUVVBTlRJVFlfV0lUSF9OVU1CRVInOlxuICAgICAgICBsZXQgYWRkZWRJdGVtRCA9IHN0YXRlLnByb2R1Y3RzLmZpbmQoaXRlbSA9PiBpdGVtLmlkID09PSBhY3Rpb24uaWQpXG4gICAgICAgIC8vY2hlY2sgaWYgdGhlIGFjdGlvbiBpZCBleGlzdHMgaW4gdGhlIGFkZGVkSXRlbXNcbiAgICAgICAgbGV0IGV4aXN0ZWRfaXRlbWQgPSBzdGF0ZS5jYXJ0LmZpbmQoaXRlbT0+IGFjdGlvbi5pZCA9PT0gaXRlbS5pZClcbiAgICAgICAgaWYoZXhpc3RlZF9pdGVtZClcbiAgICAgICAge1xuICAgICAgICAgICAgYWRkZWFkZGVkSXRlbURkSXRlbS5xdWFudGl0eSArPSBhY3Rpb24ucXR5XG4gICAgICAgICAgICByZXR1cm4ge1xuICAgICAgICAgICAgICAgIC4uLnN0YXRlLFxuICAgICAgICAgICAgICAgIHRvdGFsOiBzdGF0ZS50b3RhbCArIGFkZGVkSXRlbUQucHJpY2UgKiBhY3Rpb24ucXR5XG4gICAgICAgICAgICB9XG4gICAgICAgIH0gZWxzZSB7XG4gICAgICAgICAgICBhZGRlZEl0ZW1ELnF1YW50aXR5ID0gYWN0aW9uLnF0eTtcbiAgICAgICAgICAgIC8vY2FsY3VsYXRpbmcgdGhlIHRvdGFsXG4gICAgICAgICAgICBsZXQgbmV3VG90YWwgPSBzdGF0ZS50b3RhbCArIGFkZGVkSXRlbUQucHJpY2UgKiBhY3Rpb24ucXR5XG4gICAgICAgICAgICBcbiAgICAgICAgICAgIHJldHVybiB7XG4gICAgICAgICAgICAgICAgLi4uc3RhdGUsXG4gICAgICAgICAgICAgICAgY2FydDogWy4uLnN0YXRlLmNhcnQsIGFkZGVkSXRlbURdLFxuICAgICAgICAgICAgICAgIHRvdGFsIDogbmV3VG90YWxcbiAgICAgICAgICAgIH1cbiAgICAgICAgICAgIFxuICAgICAgICB9XG5cbiAgICBjYXNlICdSRU1PVkVfSVRFTSc6XG4gICAgICBsZXQgaXRlbVRvUmVtb3ZlID0gc3RhdGUuY2FydC5maW5kKGl0ZW09PiBhY3Rpb24uaWQgPT09IGl0ZW0uaWQpXG4gICAgICBsZXQgbmV3X2l0ZW1zID0gc3RhdGUuY2FydC5maWx0ZXIoaXRlbT0+IGFjdGlvbi5pZCAhPT0gaXRlbS5pZClcbiAgICAgICAgXG4gICAgICAvL2NhbGN1bGF0aW5nIHRoZSB0b3RhbFxuICAgICAgbGV0IG5ld1RvdGFsUmVtb3ZlID0gc3RhdGUudG90YWwgLSAoaXRlbVRvUmVtb3ZlLnByaWNlICogaXRlbVRvUmVtb3ZlLnF1YW50aXR5ICk7XG5cbiAgICAgIHJldHVybiB7XG4gICAgICAgICAgLi4uc3RhdGUsXG4gICAgICAgICAgY2FydDogbmV3X2l0ZW1zLFxuICAgICAgICAgIHRvdGFsOiBuZXdUb3RhbFJlbW92ZVxuICAgICAgfVxuXG4gICAgY2FzZSAnUkVTRVQnOlxuICAgICAgcmV0dXJuIHtcbiAgICAgICAgLi4uc3RhdGUsXG4gICAgICAgIGNhcnQ6IFtdLFxuICAgICAgfVxuICAgIGRlZmF1bHQ6XG4gICAgICByZXR1cm4gc3RhdGVcbiAgfVxufVxuXG5mdW5jdGlvbiBpbml0U3RvcmUocHJlbG9hZGVkU3RhdGUgPSBpbml0aWFsU3RhdGUpIHtcbiAgcmV0dXJuIGNyZWF0ZVN0b3JlKFxuICAgIHJlZHVjZXIsXG4gICAgcHJlbG9hZGVkU3RhdGUsXG4gICAgY29tcG9zZVdpdGhEZXZUb29scyhhcHBseU1pZGRsZXdhcmUoKSlcbiAgKVxufVxuXG5leHBvcnQgY29uc3QgaW5pdGlhbGl6ZVN0b3JlID0gKHByZWxvYWRlZFN0YXRlKSA9PiB7XG4gIGxldCBfc3RvcmUgPSBzdG9yZSA/PyBpbml0U3RvcmUocHJlbG9hZGVkU3RhdGUpXG5cbiAgLy8gQWZ0ZXIgbmF2aWdhdGluZyB0byBhIHBhZ2Ugd2l0aCBhbiBpbml0aWFsIFJlZHV4IHN0YXRlLCBtZXJnZSB0aGF0IHN0YXRlXG4gIC8vIHdpdGggdGhlIGN1cnJlbnQgc3RhdGUgaW4gdGhlIHN0b3JlLCBhbmQgY3JlYXRlIGEgbmV3IHN0b3JlXG4gIGlmIChwcmVsb2FkZWRTdGF0ZSAmJiBzdG9yZSkge1xuICAgIF9zdG9yZSA9IGluaXRTdG9yZSh7XG4gICAgICAuLi5zdG9yZS5nZXRTdGF0ZSgpLFxuICAgICAgLi4ucHJlbG9hZGVkU3RhdGUsXG4gICAgfSlcbiAgICAvLyBSZXNldCB0aGUgY3VycmVudCBzdG9yZVxuICAgIHN0b3JlID0gdW5kZWZpbmVkXG4gIH1cblxuICAvLyBGb3IgU1NHIGFuZCBTU1IgYWx3YXlzIGNyZWF0ZSBhIG5ldyBzdG9yZVxuICBpZiAodHlwZW9mIHdpbmRvdyA9PT0gJ3VuZGVmaW5lZCcpIHJldHVybiBfc3RvcmVcbiAgLy8gQ3JlYXRlIHRoZSBzdG9yZSBvbmNlIGluIHRoZSBjbGllbnRcbiAgaWYgKCFzdG9yZSkgc3RvcmUgPSBfc3RvcmVcblxuICByZXR1cm4gX3N0b3JlXG59XG5cbmV4cG9ydCBmdW5jdGlvbiB1c2VTdG9yZShpbml0aWFsU3RhdGUpIHtcbiAgY29uc3Qgc3RvcmUgPSB1c2VNZW1vKCgpID0+IGluaXRpYWxpemVTdG9yZShpbml0aWFsU3RhdGUpLCBbaW5pdGlhbFN0YXRlXSlcbiAgcmV0dXJuIHN0b3JlXG59XG4iXSwibmFtZXMiOlsidXNlTWVtbyIsImNyZWF0ZVN0b3JlIiwiYXBwbHlNaWRkbGV3YXJlIiwiY29tcG9zZVdpdGhEZXZUb29scyIsInByb2R1Y3RzRGF0YSIsInN0b3JlIiwiaW5pdGlhbFN0YXRlIiwicHJvZHVjdHMiLCJjYXJ0IiwidG90YWwiLCJyZWR1Y2VyIiwic3RhdGUiLCJhY3Rpb24iLCJ0eXBlIiwiYWRkZWRJdGVtIiwiZmluZCIsIml0ZW0iLCJpZCIsImV4aXN0ZWRfaXRlbSIsInF1YW50aXR5IiwicHJpY2UiLCJuZXdUb3RhbCIsImV4aXN0aW5nSXRlbSIsImV4SXRlbSIsIm5ld19pdGVtcyIsImZpbHRlciIsImFkZGVkSXRlbUQiLCJleGlzdGVkX2l0ZW1kIiwiYWRkZWFkZGVkSXRlbURkSXRlbSIsInF0eSIsIml0ZW1Ub1JlbW92ZSIsIm5ld1RvdGFsUmVtb3ZlIiwiaW5pdFN0b3JlIiwicHJlbG9hZGVkU3RhdGUiLCJpbml0aWFsaXplU3RvcmUiLCJfc3RvcmUiLCJnZXRTdGF0ZSIsInVuZGVmaW5lZCIsInVzZVN0b3JlIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./store.js\n");
-
-/***/ }),
-
-/***/ "./node_modules/animate.css/animate.css":
-/*!**********************************************!*\
-  !*** ./node_modules/animate.css/animate.css ***!
-  \**********************************************/
+/***/ 5544:
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ "./node_modules/react-accessible-accordion/dist/fancy-example.css":
-/*!************************************************************************!*\
-  !*** ./node_modules/react-accessible-accordion/dist/fancy-example.css ***!
-  \************************************************************************/
+/***/ 7600:
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ "./node_modules/swiper/swiper-bundle.min.css":
-/*!***************************************************!*\
-  !*** ./node_modules/swiper/swiper-bundle.min.css ***!
-  \***************************************************/
+/***/ 1631:
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ "./node_modules/swiper/swiper.min.css":
-/*!********************************************!*\
-  !*** ./node_modules/swiper/swiper.min.css ***!
-  \********************************************/
+/***/ 8722:
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ "./styles/bootstrap.min.css":
-/*!**********************************!*\
-  !*** ./styles/bootstrap.min.css ***!
-  \**********************************/
+/***/ 2620:
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ "./styles/boxicons.min.css":
-/*!*********************************!*\
-  !*** ./styles/boxicons.min.css ***!
-  \*********************************/
+/***/ 7851:
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ "./styles/flaticon.css":
-/*!*****************************!*\
-  !*** ./styles/flaticon.css ***!
-  \*****************************/
+/***/ 8628:
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ "./styles/responsive.css":
-/*!*******************************!*\
-  !*** ./styles/responsive.css ***!
-  \*******************************/
+/***/ 6050:
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ "./styles/rtl.css":
-/*!************************!*\
-  !*** ./styles/rtl.css ***!
-  \************************/
+/***/ 733:
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ "./styles/slick.css":
-/*!**************************!*\
-  !*** ./styles/slick.css ***!
-  \**************************/
+/***/ 6655:
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ "./styles/style.css":
-/*!**************************!*\
-  !*** ./styles/style.css ***!
-  \**************************/
+/***/ 8702:
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ "next/head":
-/*!****************************!*\
-  !*** external "next/head" ***!
-  \****************************/
+/***/ 968:
 /***/ ((module) => {
 
 "use strict";
@@ -199,10 +685,7 @@ module.exports = require("next/head");
 
 /***/ }),
 
-/***/ "react":
-/*!************************!*\
-  !*** external "react" ***!
-  \************************/
+/***/ 6689:
 /***/ ((module) => {
 
 "use strict";
@@ -210,10 +693,7 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ "react-feather":
-/*!********************************!*\
-  !*** external "react-feather" ***!
-  \********************************/
+/***/ 9101:
 /***/ ((module) => {
 
 "use strict";
@@ -221,10 +701,7 @@ module.exports = require("react-feather");
 
 /***/ }),
 
-/***/ "react-redux":
-/*!******************************!*\
-  !*** external "react-redux" ***!
-  \******************************/
+/***/ 6022:
 /***/ ((module) => {
 
 "use strict";
@@ -232,43 +709,15 @@ module.exports = require("react-redux");
 
 /***/ }),
 
-/***/ "react/jsx-dev-runtime":
-/*!****************************************!*\
-  !*** external "react/jsx-dev-runtime" ***!
-  \****************************************/
+/***/ 997:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("react/jsx-dev-runtime");
+module.exports = require("react/jsx-runtime");
 
 /***/ }),
 
-/***/ "redux":
-/*!************************!*\
-  !*** external "redux" ***!
-  \************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("redux");
-
-/***/ }),
-
-/***/ "redux-devtools-extension":
-/*!*******************************************!*\
-  !*** external "redux-devtools-extension" ***!
-  \*******************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("redux-devtools-extension");
-
-/***/ }),
-
-/***/ "react-hot-toast":
-/*!**********************************!*\
-  !*** external "react-hot-toast" ***!
-  \**********************************/
+/***/ 6201:
 /***/ ((module) => {
 
 "use strict";
@@ -283,7 +732,7 @@ module.exports = import("react-hot-toast");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("./pages/_app.js"));
+var __webpack_exports__ = (__webpack_exec__(8484));
 module.exports = __webpack_exports__;
 
 })();
